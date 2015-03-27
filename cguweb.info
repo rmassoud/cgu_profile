@@ -1,0 +1,62 @@
+; Packaging information for CGUWeb
+name = CGUWeb
+distribution_name = "CGUWeb"
+description = "CGUWeb distribution based on the Panopoly distribution."
+version = "7.x-1.x"
+core = "7.x"
+exclusive = 1
+
+base[] = panopoly
+
+files[] = cguweb.install
+files[] = cguweb.profile
+
+; ------------
+; Dependencies
+; ------------
+
+;
+; Core
+;
+
+; Add core dependencies here.
+
+;
+; Contrib
+;
+
+; Add contrib dependencies here.
+
+;
+; Panopoly Modules
+;
+
+; Panopoly Foundation
+dependencies[] = panopoly_core
+dependencies[] = panopoly_images
+dependencies[] = panopoly_theme
+dependencies[] = panopoly_magic
+dependencies[] = panopoly_widgets
+dependencies[] = panopoly_admin
+dependencies[] = panopoly_users
+
+; Panopoly Toolset
+dependencies[] = panopoly_pages
+dependencies[] = panopoly_search
+dependencies[] = panopoly_wysiwyg
+
+; Panopoly Recommended - Admin & UI
+;dependencies[] = backports
+;dependencies[] = breakpoints
+;dependencies[] = date_popup_authored
+;dependencies[] = module_filter
+;dependencies[] = navbar
+;dependencies[] = save_draft
+;dependencies[] = simplified_menu_admin
+;dependencies[] = views_ui
+
+; Panopoly Recommended - Other
+;dependencies[] = apps
+;dependencies[] = defaultcontent
+;dependencies[] = devel
+;dependencies[] = uuid
